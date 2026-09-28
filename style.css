@@ -1,0 +1,108 @@
+/* Estilo general de la página */
+body {
+  margin: 0;
+  background-color: #f5f7fa;
+  color: #243247;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado de la conferencia */
+header {
+  background-color: #17324f;
+  color: white;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+header h1 {
+  font-size: 48px;
+  margin: 16px 0;
+}
+
+header p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+section {
+  background-color: white;
+  padding: 32px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #17324f;
+  margin-top: 0;
+}
+
+section img {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.venue {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
+  background: #eef3f8;
+}
+
+.venue img {
+  width: 100%;
+  max-width: none;
+  height: 320px;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.section-label {
+  color: #426b8e;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+  .venue {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .venue img {
+    height: auto;
+  }
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 40px;
+  background: #eef3f8; /* el mismo color de Venue */
+}
+
+.contact h3 {
+  color: #17324f;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.contact-details p {
+  margin: 0 0 24px;
+}
+
+@media (max-width: 700px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+}
